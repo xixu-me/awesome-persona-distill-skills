@@ -14,6 +14,14 @@ A curated list of [Agent Skills](https://agentskills.io) centered on people, rel
 
 Here, "persona distillation" mainly refers to extracting expressive style, decision frameworks, and interaction patterns from conversations, works, materials, or digital traces. It is not assumed to be equivalent to a complete reconstruction of a real individual.
 
+<a href="https://www.star-history.com/?repos=xixu-me%2Fawesome-persona-distill-skills&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=xixu-me/awesome-persona-distill-skills&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=xixu-me/awesome-persona-distill-skills&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=xixu-me/awesome-persona-distill-skills&type=date&legend=top-left" />
+ </picture>
+</a>
+
 ## Table of Contents
 
 - [Self Distillation and Meta Tools](#self-distillation-and-meta-tools)

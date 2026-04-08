@@ -17,6 +17,14 @@
 
 这里的“人格蒸馏”主要指从对话、作品、资料或数字痕迹中提炼表达风格、决策框架与交互方式，不默认等同于对真实个体的完整还原。
 
+<a href="https://www.star-history.com/?repos=xixu-me%2Fawesome-persona-distill-skills&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=xixu-me/awesome-persona-distill-skills&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=xixu-me/awesome-persona-distill-skills&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=xixu-me/awesome-persona-distill-skills&type=date&legend=top-left" />
+ </picture>
+</a>
+
 ## 目录
 
 - [自我蒸馏与元工具](#自我蒸馏与元工具)
