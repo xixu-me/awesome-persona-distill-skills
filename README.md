@@ -42,6 +42,8 @@
 - [师兄.skill](https://github.com/zhanghaichao520/senpai-skill) - 从课题组材料中提炼资深成员的带人方式与救火风格。
 - [导师.skill](https://github.com/ybq22/supervisor) - 将导师的指导风格整理为面向学生与教育工作者的导师助手。
 - [大学老师.skill](https://github.com/CommitHu502Craft/professor-skill) - 从课程资料与老师风格中整理复习重点、题型偏好与评分线索。
+- [骂人求职.skill](https://github.com/Schlaflied/roast-cold-email-skill) - 从公司公开信息与招聘材料中生成有理有据的批评性 cold email，用精准观察取代空洞赞美，让被忽视的求职者重新进入视野。
+- [HR.skill](https://github.com/Schlaflied/hr-skill) - 从拒信与招聘流程中整理 HR 的沟通逻辑与决策模式，帮助求职者反向拆解筛选标准、重新定位叙事。
 
 ## 亲密关系与家庭记忆
 
