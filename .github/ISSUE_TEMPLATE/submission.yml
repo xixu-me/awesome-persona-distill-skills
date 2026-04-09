@@ -24,14 +24,14 @@ body:
     id: project_name_zh
     attributes:
       label: 汉语名称 / Chinese Name
-      description: 使用项目的常用中文名称。 / Use the project's commonly used Chinese name.
+      description: 使用存储库 README 中实际出现的名称，若没有汉语名称使用英语名称。 / Use the name explicitly used in the repository README; if there is no Chinese name, use the English name.
     validations:
       required: true
   - type: input
     id: project_name_en
     attributes:
       label: 英语名称 / English Name
-      description: 使用项目的常用英文名称。 / Use the project's commonly used English name.
+      description: 使用存储库 README 中实际出现的名称，若没有英语名称使用汉语名称。 / Use the name explicitly used in the repository README; if there is no English name, use the Chinese name.
     validations:
       required: true
   - type: textarea

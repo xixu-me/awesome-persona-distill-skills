@@ -1,5 +1,5 @@
-import test from "node:test";
 import assert from "node:assert/strict";
+import test from "node:test";
 
 import {
   CATEGORY_MAP,
@@ -21,7 +21,7 @@ test("validateRepositoryContent rejects mismatched bilingual entry URLs", () => 
 
 ## 自我蒸馏与元工具
 
-- [项目甲](https://github.com/example/a) - 中文。
+- [项目甲](https://github.com/example/a) - 汉语。
 
 ## 职场与学术关系
 
@@ -65,7 +65,7 @@ test("validateRepositoryContent accepts aligned bilingual content", () => {
 
 ## 自我蒸馏与元工具
 
-- [项目甲](https://github.com/example/a) - 中文。
+- [项目甲](https://github.com/example/a) - 汉语。
 
 ## 职场与学术关系
 
