@@ -81,6 +81,7 @@
 - [Karpathy.skill](https://github.com/alchaincyf/karpathy-skill) - 提炼 Andrej Karpathy 对 AI 工程、教育与研究的思考框架，形成可复用的方法论视角。
 - [毛泽东.skill](https://github.com/wwwaapplleecu-source/mao-skill) - 通过使用网络公开著作，深刻蒸馏毛教员的思想和方法论。
 - [毛选.skill](https://github.com/leezythu/maoxuan-skill) - 提炼《毛选》中的矛盾分析、根据地思维与战略判断框架，形成可复用的方法论视角。
+- [米塞斯方法论](https://github.com/LijiayuDeng/mises-perspective) - 提炼路德维希·冯·米塞斯关于人类行为学、经济计算与干预主义批判的分析框架，形成可复用的政治经济学与制度分析方法论视角。
 - [MrBeast.skill](https://github.com/alchaincyf/mrbeast-skill) - 提炼 MrBeast 的内容选题、包装与观众留存方法，形成可复用的创作打法。
 - [芒格.skill](https://github.com/alchaincyf/munger-skill) - 提炼查理·芒格的跨学科心智模型与决策启发式，形成可复用的方法论框架。
 - [纳瓦尔.skill](https://github.com/alchaincyf/naval-skill) - 提炼纳瓦尔关于财富、杠杆与判断力的框架，形成可复用的方法论视角。

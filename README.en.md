@@ -78,6 +78,7 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 - [Karpathy.skill](https://github.com/alchaincyf/karpathy-skill) - Distills Andrej Karpathy's thinking on AI engineering, education, and research into a reusable methodological perspective.
 - [MaoZedong.skill](https://github.com/wwwaapplleecu-source/mao-skill) - By utilizing publicly available online works, we can deeply distill the thoughts and methodologies of Teacher Mao.
 - [毛选.skill](https://github.com/leezythu/maoxuan-skill) - Distills contradiction analysis, base-building thinking, and strategic judgment frameworks from Mao's selected works into a reusable methodological perspective.
+- [Mises Method Skill](https://github.com/LijiayuDeng/mises-perspective) - Distills Ludwig von Mises's praxeology, economic calculation, and critique of interventionism into a reusable methodological lens for political economy and institutional analysis.
 - [MrBeast.skill](https://github.com/alchaincyf/mrbeast-skill) - Distills MrBeast's methods for content concepts, packaging, and audience retention into a reusable creator playbook.
 - [芒格.skill](https://github.com/alchaincyf/munger-skill) - Distills Charlie Munger's interdisciplinary mental models and decision heuristics into a reusable methodological framework.
 - [纳瓦尔.skill](https://github.com/alchaincyf/naval-skill) - Distills Naval's frameworks on wealth, leverage, and judgment into a reusable methodological perspective.
