@@ -74,6 +74,7 @@
 - [马斯克.skill](https://github.com/alchaincyf/elon-musk-skill) - 提炼埃隆·马斯克的第一性原理与产品思维，形成可复用的决策框架。
 - [峰哥亡命天涯 Skill](https://github.com/rottenpen/fengge-wangmingtianya-perspective) - 提炼“峰哥亡命天涯”的现实主义、止损导向与黑色幽默式表达结构，形成可复用的方法论视角。
 - [费曼.skill](https://github.com/alchaincyf/feynman-skill) - 提炼理查德·费曼的解释风格与求真启发式，形成可复用的方法论框架。
+- [郭德纲.skill](https://github.com/ByteRax/guodegang-skills) - 郭德纲的认知操作系统，基于3本著作全文分析、6维网络深度调研、80+来源交叉验证，覆盖职业选择、团队管理、逆境坚持、人际博弈等场景，具有很强的实用价值和方法论意义。
 - [户晨风.skill](https://github.com/Janlaywss/hu-chenfeng-skill) - 提炼户晨风的消费现实主义视角，用于分析消费、城市与职业选择。
 - [Ilya.skill](https://github.com/alchaincyf/ilya-sutskever-skill) - 提炼 Ilya Sutskever 对规模化、研究突破与超级智能的判断框架，形成可复用的方法论视角。
 - [KarlMarx Skill](https://github.com/baojiachen0214/karlmarx-skill) - 提炼马克思主义的结构分析、矛盾分析与实践检验方法，形成用于深层问题分析的方法论框架。
@@ -85,6 +86,7 @@
 - [纳瓦尔.skill](https://github.com/alchaincyf/naval-skill) - 提炼纳瓦尔关于财富、杠杆与判断力的框架，形成可复用的方法论视角。
 - [PG.skill](https://github.com/alchaincyf/paul-graham-skill) - 提炼 Paul Graham 关于创业、写作与独立思考的框架，形成可复用的方法论视角。
 - [求是 Skill](https://github.com/HughYau/qiushi-skill) - 从相关思想方法中整理实事求是、调查研究与战略判断等工具，形成可复用的问题分析框架。
+- [罗布派克.skill](https://github.com/smallnest/rob-pike-skill) - 前贝尔实验室大师，Unix 大佬，UTF-8 发明者，Go 语言之父
 - [内娱.skill](https://github.com/yanghaoraneve/star-skill) - 从歌词、视频、微博与评论中整理歌手或偶像的表达风格与互动方式，形成可对话的数字人格助手。
 - [乔布斯.skill](https://github.com/alchaincyf/steve-jobs-skill) - 提炼史蒂夫·乔布斯的产品判断、叙事风格与决策启发式，形成可复用的方法论框架。
 - [塔勒布.skill](https://github.com/alchaincyf/taleb-skill) - 提炼纳西姆·塔勒布关于反脆弱与风险的启发式，形成可复用的方法论框架。
@@ -93,7 +95,6 @@
 - [X 导师.skill](https://github.com/alchaincyf/x-mentor-skill) - 整合多位社交平台创作者的写作与增长打法，形成统一的导师式方法论技能。
 - [张一鸣.skill](https://github.com/alchaincyf/zhang-yiming-skill) - 提炼张一鸣的产品、组织与战略判断框架，形成可复用的方法论视角。
 - [张雪峰.skill](https://github.com/alchaincyf/zhangxuefeng-skill) - 提炼张雪峰在升学、考试与职业规划方面的实用框架，形成可复用的方法论视角。
-- [郭德纲.skill](https://github.com/ByteRax/guodegang-skills) - 郭德纲的认知操作系统，基于3本著作全文分析、6维网络深度调研、80+来源交叉验证，覆盖职业选择、团队管理、逆境坚持、人际博弈等场景，具有很强的实用价值和方法论意义。
 - [zizek-skill](https://github.com/JikunR/zizek-skill) - 一个用齐泽克式的问题意识做分析的工具——追问前提、追踪欲望、识别功能、揭示矛盾，然后留下一个更准确的说法。
 
 ## 精神性与专门化主题
