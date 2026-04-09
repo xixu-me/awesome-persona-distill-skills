@@ -107,6 +107,39 @@ test("applySubmissionToReadmes inserts matching entries in both READMEs", () => 
   );
 });
 
+test("applySubmissionToReadmes sorts entries by repository name", () => {
+  const submission = parseSubmissionIssueBody(issueBody);
+  const readmeZh = `## 自我蒸馏与元工具
+
+- [Beta 项目](https://github.com/aaa/beta) - beta。
+- [Alpha 项目](https://github.com/zzz/alpha) - alpha。
+
+## 职场与学术关系
+`;
+  const readmeEn = `## Self Distillation and Meta Tools
+
+- [Beta Project](https://github.com/aaa/beta) - beta.
+- [Alpha Project](https://github.com/zzz/alpha) - alpha.
+
+## Workplace and Academic Relationships
+`;
+
+  const updated = applySubmissionToReadmes({
+    readmeZh,
+    readmeEn,
+    submission,
+  });
+
+  assert.match(
+    updated.readmeZh,
+    /https:\/\/github\.com\/zzz\/alpha[\s\S]*https:\/\/github\.com\/aaa\/beta[\s\S]*https:\/\/github\.com\/example\/project/u,
+  );
+  assert.match(
+    updated.readmeEn,
+    /https:\/\/github\.com\/zzz\/alpha[\s\S]*https:\/\/github\.com\/aaa\/beta[\s\S]*https:\/\/github\.com\/example\/project/u,
+  );
+});
+
 test("applySubmissionToReadmes rejects duplicate repository URLs", () => {
   const submission = parseSubmissionIssueBody(issueBody);
   const readmeZh = `## 自我蒸馏与元工具

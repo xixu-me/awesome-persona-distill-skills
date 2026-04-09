@@ -11,6 +11,8 @@ import {
 export { CATEGORY_MAP };
 
 const ENTRY_PATTERN = /^- \[(.+?)\]\((https:\/\/github\.com\/[^)]+)\) - (.+)$/u;
+const GITHUB_REPOSITORY_PATTERN =
+  /^https:\/\/github\.com\/([A-Za-z0-9_.-]+)\/([A-Za-z0-9_.-]+)\/?$/u;
 
 function normalizeLineEndings(value) {
   return value.replace(/\r/g, "");
@@ -49,6 +51,28 @@ function parseEntries(sectionContent) {
         description: match[3],
       };
     });
+}
+
+function repositorySortKey(url) {
+  const match = url.match(GITHUB_REPOSITORY_PATTERN);
+  if (!match) {
+    return url.toLowerCase();
+  }
+
+  return match[2].toLowerCase();
+}
+
+function compareEntries(a, b) {
+  const byRepositoryName = repositorySortKey(a.url).localeCompare(
+    repositorySortKey(b.url),
+    "en",
+    { sensitivity: "base" },
+  );
+  if (byRepositoryName !== 0) {
+    return byRepositoryName;
+  }
+
+  return a.url.localeCompare(b.url, "en", { sensitivity: "base" });
 }
 
 export function findDuplicateUrls(urls) {
@@ -94,6 +118,20 @@ export function validateRepositoryContent({
     if (JSON.stringify(zhSectionUrls) !== JSON.stringify(enSectionUrls)) {
       throw new Error(
         `${definition.zhHeading} and ${definition.enHeading} must list the same URLs.`,
+      );
+    }
+
+    const sortedZhEntries = [...zhEntries].sort(compareEntries);
+    if (JSON.stringify(zhEntries) !== JSON.stringify(sortedZhEntries)) {
+      throw new Error(
+        `${definition.zhHeading} entries must be sorted by repository name.`,
+      );
+    }
+
+    const sortedEnEntries = [...enEntries].sort(compareEntries);
+    if (JSON.stringify(enEntries) !== JSON.stringify(sortedEnEntries)) {
+      throw new Error(
+        `${definition.enHeading} entries must be sorted by repository name.`,
       );
     }
 
