@@ -218,12 +218,75 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            await github.rest.pulls.merge({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              pull_number: Number(process.env.PR_NUMBER),
-              merge_method: "squash",
-            });
+            const pull_number = Number(process.env.PR_NUMBER);
+            let lastError = null;
+
+            for (let attempt = 1; attempt <= 12; attempt += 1) {
+              const { data: pr } = await github.rest.pulls.get({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number,
+              });
+
+              if (pr.merged || pr.state === "closed") {
+                core.info(`Pull request #${pull_number} is already closed.`);
+                return;
+              }
+
+              if (pr.mergeable === false && pr.mergeable_state === "behind") {
+                core.info(
+                  `Pull request #${pull_number} is behind the base branch. Updating branch before merge.`,
+                );
+                await github.rest.pulls.updateBranch({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  pull_number,
+                });
+                await new Promise((resolve) => setTimeout(resolve, 5000));
+                continue;
+              }
+
+              if (
+                pr.mergeable === null ||
+                pr.mergeable_state === "unknown" ||
+                pr.mergeable_state === "unstable"
+              ) {
+                core.info(
+                  `Mergeability for PR #${pull_number} is still being computed (attempt ${attempt}/12).`,
+                );
+                await new Promise((resolve) => setTimeout(resolve, 5000));
+                continue;
+              }
+
+              try {
+                await github.rest.pulls.merge({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  pull_number,
+                  merge_method: "squash",
+                  sha: pr.head.sha,
+                });
+                core.info(`Merged pull request #${pull_number}.`);
+                return;
+              } catch (error) {
+                lastError = error;
+                const message = error?.response?.data?.message ?? error.message;
+                const shouldRetry =
+                  error.status === 405 &&
+                  /Base branch was modified|not mergeable/i.test(message);
+
+                if (!shouldRetry || attempt === 12) {
+                  throw error;
+                }
+
+                core.warning(
+                  `Merge attempt ${attempt}/12 for PR #${pull_number} failed: ${message}`,
+                );
+                await new Promise((resolve) => setTimeout(resolve, 5000));
+              }
+            }
+
+            throw lastError ?? new Error(`Unable to merge PR #${pull_number}.`);
         env:
           PR_NUMBER: ${{ steps.create-pr.outputs.number }}
 
