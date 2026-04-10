@@ -40,6 +40,7 @@
 ## 自我蒸馏与元工具
 
 - [反蒸馏 Skill](https://github.com/leilei926524-tech/anti-distill) - 将可公开分发的技能内容与私有经验备份拆分管理，用于技能交付场景。
+- [八字人格](https://github.com/cantian-ai/bazi-persona-skill) - 基于生辰八字，生成会聊天、有情绪、会随时间变化的AI人格。
 - [图鉴.skill](https://github.com/Aar0nPB/curator-skill) - 跨作者 persona skill 调度器 — 根据对话意图，从 30 个 persona skill 中智能匹配推荐。
 - [数字人生.skills](https://github.com/wildbyteai/digital-life) - 从个人在日常工具中留下的数字痕迹中提炼结构化自我画像。
 - [Forge Skill](https://github.com/YIKUAIBANZI/forge-skill) - 将自我蒸馏与他人蒸馏拆分为独立流程，用于自我镜像、记忆整理与角色化对话。
