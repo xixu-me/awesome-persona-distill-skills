@@ -83,6 +83,7 @@
 - [Ilya.skill](https://github.com/alchaincyf/ilya-sutskever-skill) - 提炼 Ilya Sutskever 对规模化、研究突破与超级智能的判断框架，形成可复用的方法论视角。
 - [KarlMarx Skill](https://github.com/baojiachen0214/karlmarx-skill) - 提炼马克思主义的结构分析、矛盾分析与实践检验方法，形成用于深层问题分析的方法论框架。
 - [Karpathy.skill](https://github.com/alchaincyf/karpathy-skill) - 提炼 Andrej Karpathy 对 AI 工程、教育与研究的思考框架，形成可复用的方法论视角。
+- [liangxi-skills](https://github.com/1sh1ro/liangxi-skills) - 从公开可见的 X 内容与交易复盘中提炼凉兮的结构判断、风险习惯与中文交易表达，形成可复用的交易方法论视角。
 - [毛泽东.skill](https://github.com/wwwaapplleecu-source/mao-skill) - 基于公开著作提炼毛泽东的思想框架与方法论视角。
 - [毛选.skill](https://github.com/leezythu/maoxuan-skill) - 提炼《毛选》中的矛盾分析、根据地思维与战略判断框架，形成可复用的方法论视角。
 - [米塞斯方法论](https://github.com/LijiayuDeng/mises-perspective) - 提炼路德维希·冯·米塞斯关于人类行为学、经济计算与干预主义批判的分析框架，形成可复用的政治经济学与制度分析方法论视角。
