@@ -67,6 +67,21 @@ function collapseWhitespace(value) {
   return value.replace(/\s+/g, " ").trim();
 }
 
+function ensureTerminalPunctuation(value, language) {
+  const normalized = collapseWhitespace(value);
+  if (!normalized) {
+    return normalized;
+  }
+
+  const punctuationPattern = language === "zh" ? /[。！？]$/u : /[.?!]$/u;
+
+  if (punctuationPattern.test(normalized)) {
+    return normalized;
+  }
+
+  return `${normalized}${language === "zh" ? "。" : "."}`;
+}
+
 function escapeForRegex(value) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
@@ -223,12 +238,12 @@ export function applySubmissionToReadmes({ readmeZh, readmeEn, submission }) {
   const zhEntry = {
     name: collapseWhitespace(submission.projectNameZh),
     url: repositoryUrl,
-    description: collapseWhitespace(submission.descriptionZh),
+    description: ensureTerminalPunctuation(submission.descriptionZh, "zh"),
   };
   const enEntry = {
     name: collapseWhitespace(submission.projectNameEn),
     url: repositoryUrl,
-    description: collapseWhitespace(submission.descriptionEn),
+    description: ensureTerminalPunctuation(submission.descriptionEn, "en"),
   };
 
   const updatedZh = updateReadmeSection(

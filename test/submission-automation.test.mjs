@@ -160,3 +160,40 @@ test("applySubmissionToReadmes rejects duplicate repository URLs", () => {
     /already exists/i,
   );
 });
+
+test("applySubmissionToReadmes adds missing terminal punctuation", () => {
+  const submission = parseSubmissionIssueBody(
+    issueBody
+      .replace(
+        "一个示例项目，用于蒸馏某类人物表达风格。",
+        "一个示例项目，用于蒸馏某类人物表达风格",
+      )
+      .replace(
+        "An example project for distilling a certain style of personal expression.",
+        "An example project for distilling a certain style of personal expression",
+      ),
+  );
+  const readmeZh = `## 自我蒸馏与元工具
+
+## 职场与学术关系
+`;
+  const readmeEn = `## Self Distillation and Meta Tools
+
+## Workplace and Academic Relationships
+`;
+
+  const updated = applySubmissionToReadmes({
+    readmeZh,
+    readmeEn,
+    submission,
+  });
+
+  assert.match(
+    updated.readmeZh,
+    /\- \[示例项目\]\(https:\/\/github\.com\/example\/project\) - 一个示例项目，用于蒸馏某类人物表达风格。\n/,
+  );
+  assert.match(
+    updated.readmeEn,
+    /\- \[Example Project\]\(https:\/\/github\.com\/example\/project\) - An example project for distilling a certain style of personal expression\.\n/,
+  );
+});

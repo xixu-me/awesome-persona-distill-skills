@@ -37,7 +37,7 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 ## Self Distillation and Meta Tools
 
 - [anti-distill](https://github.com/leilei926524-tech/anti-distill) - Separates publicly distributable skill content from private experience backups for skill-delivery workflows.
-- [curator.skill](https://github.com/Aar0nPB/curator-skill) - Cross-author persona skill router — matches user intent to the best-fit persona from 30 skills
+- [curator.skill](https://github.com/Aar0nPB/curator-skill) - Cross-author persona skill router — matches user intent to the best-fit persona from 30 skills.
 - [数字人生.skills](https://github.com/wildbyteai/digital-life) - Distills a structured self-portrait from the digital traces a person leaves across everyday tools.
 - [Forge Skill](https://github.com/YIKUAIBANZI/forge-skill) - Separates self-distillation and other-persona distillation into distinct workflows for reflection, memory preservation, and persona-driven dialogue.
 - [永生.skill](https://github.com/agenmod/immortal-skill) - Distills a multidimensional digital persona profile from chat logs and related materials.
