@@ -96,6 +96,7 @@
 - [童锦程.skill](https://github.com/hotcoffeeshake/tong-jincheng-skill) - 提炼童锦程在人际关系与情感判断上的直白视角与启发式。
 - [特朗普.skill](https://github.com/alchaincyf/trump-skill) - 提炼特朗普的谈判、锚定与权力博弈分析框架，形成可复用的方法论视角。
 - [X 导师.skill](https://github.com/alchaincyf/x-mentor-skill) - 整合多位社交平台创作者的写作与增长打法，形成统一的导师式方法论技能。
+- [新青年.Skill](https://github.com/SamadhiFire/xinqingnian-skill) - 把“新中国最会解决问题的脑子”请来，当一次“临时参谋”。把《毛选》157篇文章进行蒸馏，将其方法论变成可执行的现实分析 skill。
 - [张一鸣.skill](https://github.com/alchaincyf/zhang-yiming-skill) - 提炼张一鸣的产品、组织与战略判断框架，形成可复用的方法论视角。
 - [张雪峰.skill](https://github.com/alchaincyf/zhangxuefeng-skill) - 提炼张雪峰在升学、考试与职业规划方面的实用框架，形成可复用的方法论视角。
 - [zizek-skill](https://github.com/JikunR/zizek-skill) - 以齐泽克式的问题意识整理前提追问、欲望追踪与矛盾揭示方法，形成可复用的分析工具。
