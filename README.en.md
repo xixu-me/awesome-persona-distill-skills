@@ -59,6 +59,7 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 
 ## Intimate Relationships and Family Memories
 
+- [brother.skill](https://github.com/realteamprinz/brother-skill) - Distill your bros from YouTube, TikTok, Discord, WeChat and more — their voice, catchphrases, humor style, and chaos energy. Works for real brothers, group chat friends, and internet personalities. Self-learning memory that deepens with every input.
 - [Crush.skill](https://github.com/xiaoheizi8/crush-skills) - Distills conversational style from chats, photos, and social traces for reflection and emotional recollection.
 - [ex.skill](https://github.com/therealXiaomanChu/ex-skill) - Organizes speaking style and shared memories from private records for remembrance and reflection.
 - [MamaSkill](https://github.com/jiangziyan-693/MamaSkill) - Organizes chat logs, letters, and voice notes from a loved one into a commemorative family companion.

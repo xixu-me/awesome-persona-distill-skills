@@ -62,6 +62,7 @@
 
 ## 亲密关系与家庭记忆
 
+- [兄弟.skill](https://github.com/realteamprinz/brother-skill) - 从抖音、微信截图等来源蒸馏你的兄弟们——他们的说话方式、口头禅、搞笑风格和恶搞能量。支持蒸馏真实兄弟、群聊好友和网络红人（如Jake Paul、张凤霞、MrBeast等）。自学习记忆，输入越多画像越准。
 - [暗恋对象.skill](https://github.com/xiaoheizi8/crush-skills) - 从聊天、照片与社交痕迹中提炼对话风格，用于个人回望与情感整理。
 - [前任.skill](https://github.com/therealXiaomanChu/ex-skill) - 从私人记录中整理说话方式与共同记忆，用于回忆与关系梳理。
 - [MamaSkill](https://github.com/jiangziyan-693/MamaSkill) - 从亲人的聊天记录、信件与语音中整理纪念型家庭陪伴助手。
