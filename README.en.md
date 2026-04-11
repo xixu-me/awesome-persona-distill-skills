@@ -45,6 +45,7 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 - [midas.skill](https://github.com/realteamprinz/midas-skill) - Extracts a 6-dimension wealth operating system from any public figure (money engine, deal architecture, investment thesis, risk profile, leverage model, exit pattern), and mines personal daily data for wealth signals.
 - [数字生命开源计划](https://github.com/weixr18/my-digital-life) - Provides a framework for turning a personal knowledge base into a digital avatar.
 - [Nuwa](https://github.com/alchaincyf/nuwa-skill) - Distills reusable skills from an individual's mental models, decision heuristics, and expression patterns.
+- [Persona Skill](https://github.com/Tomsawyerhu/Persona-Skill) - Unified multilingual persona distillation, synthesis, role-playing, and management.
 - [VibePortrait](https://github.com/dadwadw233/VibePortrait) - Distills a developer portrait, development skills, and preferences from vibe-coding conversations.
 - [Yourself.skill](https://github.com/notdog1998/yourself-skill) - Organizes personal conversations and records into a self-distillation assistant.
 

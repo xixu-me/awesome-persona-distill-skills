@@ -48,6 +48,7 @@
 - [midas.skill](https://github.com/realteamprinz/midas-skill) - 从任意公众人物中提炼出六维度财富操作系统（赚钱引擎、交易架构、投资逻辑、风险画像、杠杆模型、退出路径），也可从个人日常数据中挖掘财富信号。
 - [数字生命开源计划](https://github.com/weixr18/my-digital-life) - 提供一套将个人知识库升级为数字分身的框架。
 - [女娲.skill](https://github.com/alchaincyf/nuwa-skill) - 从个人的心智模型、决策启发式与表达模式中提炼可复用技能。
+- [Persona Skill](https://github.com/Tomsawyerhu/Persona-Skill) - 统一的多语言人格蒸馏、合成、扮演、管理。
 - [VibePortrait](https://github.com/dadwadw233/VibePortrait) - 从 Vibe Coding 对话中提炼开发者画像、开发技能与偏好。
 - [自己.skill](https://github.com/notdog1998/yourself-skill) - 将个人对话与记录整理为自我蒸馏助手。
 
