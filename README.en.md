@@ -48,6 +48,7 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 - [Persona Skill](https://github.com/Tomsawyerhu/Persona-Skill) - Unified multilingual persona distillation, synthesis, role-playing, and management.
 - [VibePortrait](https://github.com/dadwadw233/VibePortrait) - Distills a developer portrait, development skills, and preferences from vibe-coding conversations.
 - [Yourself.skill](https://github.com/notdog1998/yourself-skill) - Organizes personal conversations and records into a self-distillation assistant.
+- [zhuzi-skill](https://github.com/linzzzzzz/zhuzi-skill) - Orchestrates structured debates among existing persona skills around the same question, with automatic persona selection, round-based exchanges, and neutral synthesis.
 
 ## Workplace and Academic Relationships
 

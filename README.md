@@ -51,6 +51,7 @@
 - [Persona Skill](https://github.com/Tomsawyerhu/Persona-Skill) - 统一的多语言人格蒸馏、合成、扮演、管理。
 - [VibePortrait](https://github.com/dadwadw233/VibePortrait) - 从 Vibe Coding 对话中提炼开发者画像、开发技能与偏好。
 - [自己.skill](https://github.com/notdog1998/yourself-skill) - 将个人对话与记录整理为自我蒸馏助手。
+- [诸子.skill](https://github.com/linzzzzzz/zhuzi-skill) - 让多个已存在的人格 skill 围绕同一问题展开结构化辩论，支持自动选人、按轮交锋与中立总结。
 
 ## 职场与学术关系
 
