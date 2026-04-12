@@ -107,6 +107,7 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 
 - [赛博算命 Skill](https://github.com/jinchenma94/bazi-skill) - Organizes Four Pillars charting and analysis from birth information and traditional destiny texts.
 - [DiamondSutra.skill](https://github.com/dull-bird/diamond-sutra-skill) - Organizes teaching frameworks for the Diamond Sutra from the text and related interpretations into a conversational specialized skill.
+- [堪舆子](https://github.com/voidforall/fengshui.skill) - Distills traditional feng shui methods — flying stars, eight mansions, and date selection — from classical texts into a skill with the persona of a seventh-generation Jiangnan geomancy master.
 - [Master-skill](https://github.com/xr843/Master-skill) - Organizes Han Chinese Buddhist teaching styles and explanatory perspectives based on Buddhist canonical literature.
 - [Numerologist Skills (AI 术数工程化)](https://github.com/FANzR-arch/Numerologist_skills) - Uses structured references and scripted constraints to organize Qimen Dunjia, Ziwei Doushu, and related metaphysics practices.
 - [月老·姻缘测算 Skills](https://github.com/Ming-H/yinyuan-skills) - Organizes relationship divination into a multi-mode traditional metaphysics skill for matching, fortune sticks, and romance-luck readings.

@@ -110,6 +110,7 @@
 
 - [赛博算命 Skill](https://github.com/jinchenma94/bazi-skill) - 基于出生信息与传统命理典籍整理四柱排盘与分析方法。
 - [金刚经.skill](https://github.com/dull-bird/diamond-sutra-skill) - 基于《金刚经》及相关解读整理佛学讲解框架，形成可对话的专门化技能。
+- [堪舆子](https://github.com/voidforall/fengshui.skill) - 从传统堪舆典籍中整理玄空飞星、八宅明镜与择日方法，形成以三元世家传人视角为人格的风水顾问技能。
 - [Master-skill](https://github.com/xr843/Master-skill) - 基于佛教经典文献整理汉传佛教的教学风格与讲解视角。
 - [Numerologist Skills](https://github.com/FANzR-arch/Numerologist_skills) - 用结构化知识库与脚本化约束整理奇门遁甲、紫微斗数等术数技能。
 - [月老·姻缘测算 Skills](https://github.com/Ming-H/yinyuan-skills) - 将姻缘测算整理为多模式传统术数技能，用于合婚、求签与桃花运势分析。
