@@ -75,6 +75,7 @@
 
 ## 公众人物与方法论视角
 
+- [AI 维舟.skill](https://github.com/TerryTian-tech/AIWeiZhou-skill) - 提炼维舟在社会议题上的心智与思维框架，形成可复用的方法论视角，用于分析热点议题或评价具体观点。
 - [巴菲特思维操作系统](https://github.com/will2025btc/buffett-perspective) - 提炼沃伦·巴菲特的投资与决策框架，形成可复用的方法论视角。
 - [常熟阿诺（加州盛亦陶） Skill](https://github.com/Ricardo-Vv/changshu-anuo) - 提炼常熟阿诺关于“左右脑互搏”的表达与分析视角，形成可复用的方法论框架。
 - [马斯克.skill](https://github.com/alchaincyf/elon-musk-skill) - 提炼埃隆·马斯克的第一性原理与产品思维，形成可复用的决策框架。

@@ -72,6 +72,7 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 
 ## Public Figures and Methodological Perspectives
 
+- [AI 维舟.skill](https://github.com/TerryTian-tech/AIWeiZhou-skill) - Distill Wei Zhou's mindset and thought framework on social issues, and develop a reusable methodological perspective for analyzing hot topics or evaluating specific viewpoints.
 - [Buffett Perspective - Claude Code Skill](https://github.com/will2025btc/buffett-perspective) - Distills Warren Buffett's investment and decision-making frameworks into a reusable methodological perspective.
 - [常熟阿诺（加州盛亦陶） Skill](https://github.com/Ricardo-Vv/changshu-anuo) - Distills Changshu Anuo's "left-brain versus right-brain" analytical perspective into a reusable methodological framework.
 - [马斯克.skill](https://github.com/alchaincyf/elon-musk-skill) - Distills Elon Musk's first-principles thinking and product mindset into a reusable decision framework.
