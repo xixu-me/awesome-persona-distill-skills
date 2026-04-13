@@ -115,6 +115,7 @@
 - [Master-skill](https://github.com/xr843/Master-skill) - 基于佛教经典文献整理汉传佛教的教学风格与讲解视角。
 - [Numerologist Skills](https://github.com/FANzR-arch/Numerologist_skills) - 用结构化知识库与脚本化约束整理奇门遁甲、紫微斗数等术数技能。
 - [月老·姻缘测算 Skills](https://github.com/Ming-H/yinyuan-skills) - 将姻缘测算整理为多模式传统术数技能，用于合婚、求签与桃花运势分析。
+- [CCHub](https://github.com/Moresl/cchub) - A desktop control panel for the Claude Code / Codex / Gemini CLI ecosystem. Manage MCP servers, config profiles, agent skills, CLAUDE.md, hooks, and workflow templates from a single Tauri app (Windows / macOS / Linux).
 
 ## 贡献
 
