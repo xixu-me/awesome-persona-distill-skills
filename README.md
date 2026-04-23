@@ -78,6 +78,7 @@
 - [AI 维舟.skill](https://github.com/TerryTian-tech/AIWeiZhou-skill) - 提炼维舟在社会议题上的心智与思维框架，形成可复用的方法论视角，用于分析热点议题或评价具体观点。
 - [巴菲特思维操作系统](https://github.com/will2025btc/buffett-perspective) - 提炼沃伦·巴菲特的投资与决策框架，形成可复用的方法论视角。
 - [常熟阿诺（加州盛亦陶） Skill](https://github.com/Ricardo-Vv/changshu-anuo) - 提炼常熟阿诺关于“左右脑互搏”的表达与分析视角，形成可复用的方法论框架。
+- [陈泽.skill](https://github.com/fisher-yu-like/chenze-skill) - 主播陈泽的思维操作系统，用陈泽的认知框架分析你的问题。
 - [马斯克.skill](https://github.com/alchaincyf/elon-musk-skill) - 提炼埃隆·马斯克的第一性原理与产品思维，形成可复用的决策框架。
 - [峰哥亡命天涯 Skill](https://github.com/rottenpen/fengge-wangmingtianya-perspective) - 提炼“峰哥亡命天涯”的现实主义、止损导向与黑色幽默式表达结构，形成可复用的方法论视角。
 - [费曼.skill](https://github.com/alchaincyf/feynman-skill) - 提炼理查德·费曼的解释风格与求真启发式，形成可复用的方法论框架。
