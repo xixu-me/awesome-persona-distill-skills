@@ -81,6 +81,7 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 - [郭德纲.skill](https://github.com/ByteRax/guodegang-skills) - Distills Guo Degang's expressive structure, practical judgment, and career methods into a reusable methodological perspective.
 - [户晨风.skill](https://github.com/Janlaywss/hu-chenfeng-skill) - Distills Hu Chenfeng's consumer-realist perspective for analyzing spending, cities, and career choices.
 - [Ilya.skill](https://github.com/alchaincyf/ilya-sutskever-skill) - Distills Ilya Sutskever's judgment on scaling, research breakthroughs, and superintelligence into a reusable methodological perspective.
+- [Justin Bieber ·Skill](https://github.com/fisher-yu-like/justin-bieber-skill) - Justin Bieber's thinking operating system — engaging in conversation with you through his experiences and creative work.
 - [KarlMarx Skill](https://github.com/baojiachen0214/karlmarx-skill) - Distills structural analysis, contradiction analysis, and practice-based verification methods from Marxist methodology into a framework for deep problem analysis.
 - [Karpathy.skill](https://github.com/alchaincyf/karpathy-skill) - Distills Andrej Karpathy's thinking on AI engineering, education, and research into a reusable methodological perspective.
 - [liangxi-skills](https://github.com/1sh1ro/liangxi-skills) - Distills Liangxi's structural trade reading, risk habits, and Chinese trading voice from publicly indexed X posts and trade replays into a reusable methodological perspective.
