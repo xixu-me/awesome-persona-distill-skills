@@ -101,6 +101,7 @@
 - [塔勒布.skill](https://github.com/alchaincyf/taleb-skill) - 提炼纳西姆·塔勒布关于反脆弱与风险的启发式，形成可复用的方法论框架。
 - [童锦程.skill](https://github.com/hotcoffeeshake/tong-jincheng-skill) - 提炼童锦程在人际关系与情感判断上的直白视角与启发式。
 - [特朗普.skill](https://github.com/alchaincyf/trump-skill) - 提炼特朗普的谈判、锚定与权力博弈分析框架，形成可复用的方法论视角。
+- [王二.skill](https://github.com/fisher-yu-like/wang-er-skill) - 提炼王小波作品中“王二”这个角色的精神与思维方式，形成可复用的方法论框架。
 - [X 导师.skill](https://github.com/alchaincyf/x-mentor-skill) - 整合多位社交平台创作者的写作与增长打法，形成统一的导师式方法论技能。
 - [新青年.Skill](https://github.com/SamadhiFire/xinqingnian-skill) - 把“新中国最会解决问题的脑子”请来，当一次“临时参谋”。把《毛选》157篇文章进行蒸馏，将其方法论变成可执行的现实分析 skill。
 - [张一鸣.skill](https://github.com/alchaincyf/zhang-yiming-skill) - 提炼张一鸣的产品、组织与战略判断框架，形成可复用的方法论视角。

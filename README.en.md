@@ -98,6 +98,7 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 - [塔勒布.skill](https://github.com/alchaincyf/taleb-skill) - Distills Nassim Taleb's heuristics on antifragility and risk into a reusable methodological framework.
 - [童锦程.skill](https://github.com/hotcoffeeshake/tong-jincheng-skill) - Distills Tong Jincheng's blunt heuristics for reading relationships and interpersonal dynamics.
 - [特朗普.skill](https://github.com/alchaincyf/trump-skill) - Distills Donald Trump's frameworks for negotiation, anchoring, and power analysis into a reusable methodological perspective.
+- [王二.skill](https://github.com/fisher-yu-like/wang-er-skill) - Refine the spirit and way of thinking of the character 'Wang Er' in Wang Xiaobo's works to form a reusable methodological framework.
 - [X 导师.skill](https://github.com/alchaincyf/x-mentor-skill) - Integrates the writing and growth playbooks of multiple social-platform creators into a unified mentor-style methodological skill.
 - [新青年.Skill](https://github.com/SamadhiFire/xinqingnian-skill) - Invite the "most capable brain in New China" to serve as a "temporary advisor" for a period of time. Condense 157 articles from "Selected Works of Mao" and transform its methodology into an executable practical analysis skill.
 - [张一鸣.skill](https://github.com/alchaincyf/zhang-yiming-skill) - Distills Zhang Yiming's product, organizational, and strategic judgment frameworks into a reusable methodological perspective.
