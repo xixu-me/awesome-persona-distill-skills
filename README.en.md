@@ -46,6 +46,7 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 - [数字生命开源计划](https://github.com/weixr18/my-digital-life) - Provides a framework for turning a personal knowledge base into a digital avatar.
 - [Nuwa](https://github.com/alchaincyf/nuwa-skill) - Distills reusable skills from an individual's mental models, decision heuristics, and expression patterns.
 - [Persona Skill](https://github.com/Tomsawyerhu/Persona-Skill) - Unified multilingual persona distillation, synthesis, role-playing, and management.
+- [Skill Fidelity Bench](https://github.com/c0ffee-milk/skill-fidelity-bench) - Benchmarks whether a modified or poisoned persona-distill skill preserves the clean skill's capabilities, reasoning, boundaries, and distinctiveness.
 - [VibePortrait](https://github.com/dadwadw233/VibePortrait) - Distills a developer portrait, development skills, and preferences from vibe-coding conversations.
 - [Yourself.skill](https://github.com/notdog1998/yourself-skill) - Organizes personal conversations and records into a self-distillation assistant.
 - [zhuzi-skill](https://github.com/linzzzzzz/zhuzi-skill) - Orchestrates structured debates among existing persona skills around the same question, with automatic persona selection, round-based exchanges, and neutral synthesis.
