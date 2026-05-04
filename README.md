@@ -45,6 +45,7 @@
 - [数字人生.skills](https://github.com/wildbyteai/digital-life) - 从个人在日常工具中留下的数字痕迹中提炼结构化自我画像。
 - [Forge Skill](https://github.com/YIKUAIBANZI/forge-skill) - 将自我蒸馏与他人蒸馏拆分为独立流程，用于自我镜像、记忆整理与角色化对话。
 - [永生.skill](https://github.com/agenmod/immortal-skill) - 从聊天记录与相关资料中整理多维数字人格画像。
+- [大师.skill](https://github.com/voidborne-d/master-skill) - 从一个具体行业的从业经验中提炼判断方式、决策框架与工具习惯，形成可复用的方法论 skill。
 - [midas.skill](https://github.com/realteamprinz/midas-skill) - 从任意公众人物中提炼出六维度财富操作系统（赚钱引擎、交易架构、投资逻辑、风险画像、杠杆模型、退出路径），也可从个人日常数据中挖掘财富信号。
 - [数字生命开源计划](https://github.com/weixr18/my-digital-life) - 提供一套将个人知识库升级为数字分身的框架。
 - [女娲.skill](https://github.com/alchaincyf/nuwa-skill) - 从个人的心智模型、决策启发式与表达模式中提炼可复用技能。

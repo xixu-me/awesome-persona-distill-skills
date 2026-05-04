@@ -42,6 +42,7 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 - [数字人生.skills](https://github.com/wildbyteai/digital-life) - Distills a structured self-portrait from the digital traces a person leaves across everyday tools.
 - [Forge Skill](https://github.com/YIKUAIBANZI/forge-skill) - Separates self-distillation and other-persona distillation into distinct workflows for reflection, memory preservation, and persona-driven dialogue.
 - [永生.skill](https://github.com/agenmod/immortal-skill) - Distills a multidimensional digital persona profile from chat logs and related materials.
+- [master-skill](https://github.com/voidborne-d/master-skill) - Distills how practitioners in a given industry judge, decide, and use tools into a reusable methodological skill.
 - [midas.skill](https://github.com/realteamprinz/midas-skill) - Extracts a 6-dimension wealth operating system from any public figure (money engine, deal architecture, investment thesis, risk profile, leverage model, exit pattern), and mines personal daily data for wealth signals.
 - [数字生命开源计划](https://github.com/weixr18/my-digital-life) - Provides a framework for turning a personal knowledge base into a digital avatar.
 - [Nuwa](https://github.com/alchaincyf/nuwa-skill) - Distills reusable skills from an individual's mental models, decision heuristics, and expression patterns.
