@@ -49,6 +49,7 @@
 - [数字生命开源计划](https://github.com/weixr18/my-digital-life) - 提供一套将个人知识库升级为数字分身的框架。
 - [女娲.skill](https://github.com/alchaincyf/nuwa-skill) - 从个人的心智模型、决策启发式与表达模式中提炼可复用技能。
 - [Persona Skill](https://github.com/Tomsawyerhu/Persona-Skill) - 统一的多语言人格蒸馏、合成、扮演、管理。
+- [Skill Fidelity Bench](https://github.com/c0ffee-milk/skill-fidelity-bench) - 用于评测人格蒸馏 skill 在修改或投毒后是否保留原始能力、推理框架、边界与辨识度的基准工具 skill。
 - [VibePortrait](https://github.com/dadwadw233/VibePortrait) - 从 Vibe Coding 对话中提炼开发者画像、开发技能与偏好。
 - [自己.skill](https://github.com/notdog1998/yourself-skill) - 将个人对话与记录整理为自我蒸馏助手。
 - [诸子.skill](https://github.com/linzzzzzz/zhuzi-skill) - 让多个已存在的人格 skill 围绕同一问题展开结构化辩论，支持自动选人、按轮交锋与中立总结。
