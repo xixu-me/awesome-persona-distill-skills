@@ -42,7 +42,6 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 
 ## Self Distillation and Meta Tools
 
-- [anti-distill](https://github.com/leilei926524-tech/anti-distill) - Separates publicly distributable skill content from private experience backups for skill-delivery workflows.
 - [Bazi Person Skill](https://github.com/cantian-ai/bazi-persona-skill) - Generate an AI persona from Bazi (Chinese astrology) that talks, feels, and evolves over time.
 - [curator.skill](https://github.com/Aar0nPB/curator-skill) - Cross-author persona skill router — matches user intent to the best-fit persona from 30 skills.
 - [数字人生.skills](https://github.com/wildbyteai/digital-life) - Distills a structured self-portrait from the digital traces a person leaves across everyday tools.
@@ -50,6 +49,7 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 - [永生.skill](https://github.com/agenmod/immortal-skill) - Distills a multidimensional digital persona profile from chat logs and related materials.
 - [master-skill](https://github.com/swaylq/master-skill) - Distills how practitioners in a given industry judge, decide, and use tools into a reusable methodological skill.
 - [midas.skill](https://github.com/realteamprinz/midas-skill) - Extracts a 6-dimension wealth operating system from any public figure (money engine, deal architecture, investment thesis, risk profile, leverage model, exit pattern), and mines personal daily data for wealth signals.
+- [anti-distill](https://github.com/lcmomo/my-anti-distill) - Separates publicly distributable skill content from private experience backups for skill-delivery workflows.
 - [数字生命开源计划](https://github.com/weixr18/my-digital-life) - Provides a framework for turning a personal knowledge base into a digital avatar.
 - [Nuwa](https://github.com/alchaincyf/nuwa-skill) - Distills reusable skills from an individual's mental models, decision heuristics, and expression patterns.
 - [Persona Skill](https://github.com/Tomsawyerhu/Persona-Skill) - Unified multilingual persona distillation, synthesis, role-playing, and management.

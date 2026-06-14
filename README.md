@@ -45,7 +45,6 @@
 
 ## 自我蒸馏与元工具
 
-- [反蒸馏 Skill](https://github.com/leilei926524-tech/anti-distill) - 将可公开分发的技能内容与私有经验备份拆分管理，用于技能交付场景。
 - [八字人格](https://github.com/cantian-ai/bazi-persona-skill) - 基于生辰八字，生成会聊天、有情绪、会随时间变化的AI人格。
 - [图鉴.skill](https://github.com/Aar0nPB/curator-skill) - 跨作者 persona skill 调度器 — 根据对话意图，从 30 个 persona skill 中智能匹配推荐。
 - [数字人生.skills](https://github.com/wildbyteai/digital-life) - 从个人在日常工具中留下的数字痕迹中提炼结构化自我画像。
@@ -53,6 +52,7 @@
 - [永生.skill](https://github.com/agenmod/immortal-skill) - 从聊天记录与相关资料中整理多维数字人格画像。
 - [大师.skill](https://github.com/swaylq/master-skill) - 从一个具体行业的从业经验中提炼判断方式、决策框架与工具习惯，形成可复用的方法论 skill。
 - [midas.skill](https://github.com/realteamprinz/midas-skill) - 从任意公众人物中提炼出六维度财富操作系统（赚钱引擎、交易架构、投资逻辑、风险画像、杠杆模型、退出路径），也可从个人日常数据中挖掘财富信号。
+- [反蒸馏 Skill](https://github.com/lcmomo/my-anti-distill) - 将可公开分发的技能内容与私有经验备份拆分管理，用于技能交付场景。
 - [数字生命开源计划](https://github.com/weixr18/my-digital-life) - 提供一套将个人知识库升级为数字分身的框架。
 - [女娲.skill](https://github.com/alchaincyf/nuwa-skill) - 从个人的心智模型、决策启发式与表达模式中提炼可复用技能。
 - [Persona Skill](https://github.com/Tomsawyerhu/Persona-Skill) - 统一的多语言人格蒸馏、合成、扮演、管理。
