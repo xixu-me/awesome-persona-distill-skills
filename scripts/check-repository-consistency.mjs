@@ -7,16 +7,13 @@ import {
   CATEGORY_DEFINITIONS,
   CATEGORY_MAP,
 } from "./submission-automation.mjs";
+import {
+  ENTRY_PATTERN,
+  normalizeLineEndings,
+  compareEntries,
+} from "./utils.mjs";
 
 export { CATEGORY_MAP };
-
-const ENTRY_PATTERN = /^- \[(.+?)\]\((https:\/\/github\.com\/[^)]+)\) - (.+)$/u;
-const GITHUB_REPOSITORY_PATTERN =
-  /^https:\/\/github\.com\/([A-Za-z0-9_.-]+)\/([A-Za-z0-9_.-]+)\/?$/u;
-
-function normalizeLineEndings(value) {
-  return value.replace(/\r/g, "");
-}
 
 function collectSection(readme, heading) {
   const normalized = normalizeLineEndings(readme);
@@ -51,28 +48,6 @@ function parseEntries(sectionContent) {
         description: match[3],
       };
     });
-}
-
-function repositorySortKey(url) {
-  const match = url.match(GITHUB_REPOSITORY_PATTERN);
-  if (!match) {
-    return url.toLowerCase();
-  }
-
-  return match[2].toLowerCase();
-}
-
-function compareEntries(a, b) {
-  const byRepositoryName = repositorySortKey(a.url).localeCompare(
-    repositorySortKey(b.url),
-    "en",
-    { sensitivity: "base" },
-  );
-  if (byRepositoryName !== 0) {
-    return byRepositoryName;
-  }
-
-  return a.url.localeCompare(b.url, "en", { sensitivity: "base" });
 }
 
 export function findDuplicateUrls(urls) {

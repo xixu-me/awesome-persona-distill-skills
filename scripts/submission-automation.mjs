@@ -2,6 +2,13 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 import { pathToFileURL } from "node:url";
+import {
+  ENTRY_PATTERN,
+  GITHUB_REPOSITORY_PATTERN,
+  normalizeLineEndings,
+  repositorySortKey,
+  compareEntries,
+} from "./utils.mjs";
 
 export const CATEGORY_DEFINITIONS = [
   {
@@ -55,14 +62,6 @@ const REQUIRED_CONFIRMATIONS = [
   "我已阅读并遵循贡献指南 / I have read and follow the contribution guide",
 ];
 
-const ENTRY_PATTERN = /^- \[(.+?)\]\((https:\/\/github\.com\/[^)]+)\) - (.+)$/u;
-const GITHUB_REPOSITORY_PATTERN =
-  /^https:\/\/github\.com\/([A-Za-z0-9_.-]+)\/([A-Za-z0-9_.-]+)\/?$/u;
-
-function normalizeLineEndings(value) {
-  return value.replace(/\r/g, "");
-}
-
 function collapseWhitespace(value) {
   return value.replace(/\s+/g, " ").trim();
 }
@@ -83,13 +82,13 @@ function ensureTerminalPunctuation(value, language) {
 }
 
 function escapeForRegex(value) {
-  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return value.replace(/[.*+?^${}()|[\\]/g, "\\$&");
 }
 
 function extractSection(body, heading) {
   const normalizedBody = normalizeLineEndings(body);
   const pattern = new RegExp(
-    `(?:^|\\n)### ${escapeForRegex(heading)}\\n([\\s\\S]*?)(?=\\n### |$)`,
+    `(?:^|\n)### ${escapeForRegex(heading)}\n([\s\S]*?)(?=\n### |$)`,
     "u",
   );
   const match = normalizedBody.match(pattern);
@@ -120,28 +119,6 @@ function parseEntry(line) {
     url: normalizeRepositoryUrl(match[2]),
     description: match[3],
   };
-}
-
-function repositorySortKey(url) {
-  const match = url.match(GITHUB_REPOSITORY_PATTERN);
-  if (!match) {
-    return url.toLowerCase();
-  }
-
-  return match[2].toLowerCase();
-}
-
-function compareEntries(a, b) {
-  const byRepositoryName = repositorySortKey(a.url).localeCompare(
-    repositorySortKey(b.url),
-    "en",
-    { sensitivity: "base" },
-  );
-  if (byRepositoryName !== 0) {
-    return byRepositoryName;
-  }
-
-  return a.url.localeCompare(b.url, "en", { sensitivity: "base" });
 }
 
 function sectionRange(readme, heading) {
@@ -203,7 +180,7 @@ function assertRequiredConfirmations(body) {
   const confirmationSection = extractSection(body, "确认事项 / Confirmations");
   for (const label of REQUIRED_CONFIRMATIONS) {
     const pattern = new RegExp(
-      `(^|\\n)- \\[[xX]\\] ${escapeForRegex(label)}(?=\\n|$)`,
+      `(^|\n)- \\[[xX]\\] ${escapeForRegex(label)}(?=\n|$)`,
       "u",
     );
     if (!pattern.test(confirmationSection)) {
