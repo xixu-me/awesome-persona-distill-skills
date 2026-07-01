@@ -134,3 +134,7 @@
 申请新增收录请先提交 issue 表单；维护者审核并添加 `approved` 标签后，工作流会自动生成 PR。
 
 如果你是在修复现有条目、文档或失效链接，仍可直接提交 PR。具体约定见 [`CONTRIBUTING.md`](CONTRIBUTING.md)。
+
+
+## Related Resources
+- [Skill Hub](https://skill.442595.xyz/) — 5800+ curated AI Agent Skills for Claude Code, Codex, Cursor, Hermes & more across 22 categories.
