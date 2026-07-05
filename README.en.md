@@ -42,6 +42,8 @@ Here, "persona distillation" mainly refers to extracting expressive style, decis
 
 ## Self Distillation and Meta Tools
 
+- [Context Kit](https://github.com/JDDavenport/context-kit) - 4 Personal Context Artifact templates for structured self-distillation: `pca-wiki.md` (roles, projects), `pca-mental-models.md` (decision priors), `pca-voice.md` (style + 10 examples), `pca-protocols.md` (non-negotiables). Captures who you are so any AI session starts context-full. 5 Claude Code skills included. MIT, one-command install.
+
 - [Bazi Person Skill](https://github.com/cantian-ai/bazi-persona-skill) - Generate an AI persona from Bazi (Chinese astrology) that talks, feels, and evolves over time.
 - [curator.skill](https://github.com/Aar0nPB/curator-skill) - Cross-author persona skill router — matches user intent to the best-fit persona from 30 skills.
 - [数字人生.skills](https://github.com/wildbyteai/digital-life) - Distills a structured self-portrait from the digital traces a person leaves across everyday tools.
