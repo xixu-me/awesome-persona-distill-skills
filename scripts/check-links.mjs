@@ -11,6 +11,7 @@ const DEFAULT_FILES = [
 ];
 
 const REMOTE_PROTOCOL_PATTERN = /^https?:\/\//u;
+const IGNORED_REMOTE_TARGET_PREFIXES = ["https://dartnode.com"];
 
 export function extractMarkdownLinks(markdown) {
   const withoutFencedCode = markdown.replace(/```[\s\S]*?```/gu, "");
@@ -22,7 +23,8 @@ function shouldIgnoreTarget(target) {
   return (
     target.startsWith("#") ||
     target.startsWith("mailto:") ||
-    target.startsWith("tel:")
+    target.startsWith("tel:") ||
+    IGNORED_REMOTE_TARGET_PREFIXES.some((prefix) => target.startsWith(prefix))
   );
 }
 
