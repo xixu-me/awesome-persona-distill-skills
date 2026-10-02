@@ -77,9 +77,13 @@ async function validateFileLinks({ filePath, workspace }) {
     }
 
     if (REMOTE_PROTOCOL_PATTERN.test(target)) {
-      const result = await checkRemoteLink({ target });
-      if (!result.ok) {
-        failures.push(`${filePath}: ${target} returned ${result.status}`);
+      try {
+        const result = await checkRemoteLink({ target });
+        if (!result.ok) {
+          failures.push(`${filePath}: ${target} returned ${result.status}`);
+        }
+      } catch (error) {
+        failures.push(`${filePath}: ${target} failed: ${error.message}`);
       }
       continue;
     }
