@@ -11,7 +11,10 @@ const DEFAULT_FILES = [
 ];
 
 const REMOTE_PROTOCOL_PATTERN = /^https?:\/\//u;
-const IGNORED_REMOTE_TARGET_PREFIXES = ["https://dartnode.com"];
+const IGNORED_REMOTE_TARGET_PREFIXES = [
+  "https://dartnode.com",
+  "https://file.xi-xu.me/QR%20Codes/",
+];
 
 export function extractMarkdownLinks(markdown) {
   const withoutFencedCode = markdown.replace(/```[\s\S]*?```/gu, "");
