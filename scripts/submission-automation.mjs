@@ -2,6 +2,13 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 import { pathToFileURL } from "node:url";
+import {
+  ENTRY_PATTERN,
+  GITHUB_REPOSITORY_PATTERN,
+  normalizeLineEndings,
+  repositorySortKey,
+  compareEntries,
+} from "./utils.mjs";
 
 export const CATEGORY_DEFINITIONS = [
   {
@@ -54,14 +61,6 @@ const REQUIRED_FIELDS = [
 const REQUIRED_CONFIRMATIONS = [
   "我已阅读并遵循贡献指南 / I have read and follow the contribution guide",
 ];
-
-const ENTRY_PATTERN = /^- \[(.+?)\]\((https:\/\/github\.com\/[^)]+)\) - (.+)$/u;
-const GITHUB_REPOSITORY_PATTERN =
-  /^https:\/\/github\.com\/([A-Za-z0-9_.-]+)\/([A-Za-z0-9_.-]+)\/?$/u;
-
-function normalizeLineEndings(value) {
-  return value.replace(/\r/g, "");
-}
 
 function collapseWhitespace(value) {
   return value.replace(/\s+/g, " ").trim();
@@ -120,28 +119,6 @@ function parseEntry(line) {
     url: normalizeRepositoryUrl(match[2]),
     description: match[3],
   };
-}
-
-function repositorySortKey(url) {
-  const match = url.match(GITHUB_REPOSITORY_PATTERN);
-  if (!match) {
-    return url.toLowerCase();
-  }
-
-  return match[2].toLowerCase();
-}
-
-function compareEntries(a, b) {
-  const byRepositoryName = repositorySortKey(a.url).localeCompare(
-    repositorySortKey(b.url),
-    "en",
-    { sensitivity: "base" },
-  );
-  if (byRepositoryName !== 0) {
-    return byRepositoryName;
-  }
-
-  return a.url.localeCompare(b.url, "en", { sensitivity: "base" });
 }
 
 function sectionRange(readme, heading) {
