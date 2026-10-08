@@ -53,7 +53,7 @@ jobs:
 
       - name: Check out repository
         if: steps.existing-pr.outputs.exists != 'true'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
