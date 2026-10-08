@@ -71,7 +71,7 @@ jobs:
 
       - name: Trigger merge workflow
         if: github.event_name == 'workflow_dispatch'
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         env:
           DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
           PR_NUMBER: ${{ inputs.pr_number }}
