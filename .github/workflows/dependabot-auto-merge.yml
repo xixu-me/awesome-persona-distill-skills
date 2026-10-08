@@ -38,7 +38,7 @@ jobs:
       - name: Merge Dependabot PRs when checks pass
         uses: actions/github-script@v9
         with:
-          github-token: ${{ secrets.DEPENDABOT_AUTO_MERGE_TOKEN || github.token }}
+          github-token: ${{ github.token }}
           script: |
             const owner = context.repo.owner;
             const repo = context.repo.repo;
@@ -161,6 +161,17 @@ jobs:
                 continue;
               }
 
+              const files = await github.paginate(github.rest.pulls.listFiles, {
+                owner, repo, pull_number, per_page: 100,
+              });
+              if (files.some((file) => [file.filename, file.previous_filename].some((name) => name?.startsWith(".github/workflows/")))) {
+                const message = "PR #" + pull_number + " changes workflow files and requires manual merging.";
+                core.info(message);
+                core.summary.addRaw(message + "\n");
+                await core.summary.write();
+                continue;
+              }
+
               const signalState = await getSignalState(pr.head.sha);
               if (signalState.missingChecks.length > 0) {
                 core.info("PR #" + pull_number + " is waiting for validation checks: " + signalState.missingChecks.join(", "));
@@ -220,5 +231,5 @@ jobs:
             }
 
             if (mergeErrors.length > 0) {
-              core.setFailed(mergeErrors.join("\n") + "\nWorkflow dependency updates require DEPENDABOT_AUTO_MERGE_TOKEN with Contents, Pull requests, and Workflows write permissions.");
+              core.setFailed(mergeErrors.join("\n"));
             }

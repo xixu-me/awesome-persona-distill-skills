@@ -32,7 +32,7 @@ const check = (
   app: { slug: "github-actions" },
 });
 const required = JSON.parse(yaml.match(/const requiredCheckNames = (.*);/)[1]);
-async function run(checks, mergeError, includeRequired = true) {
+async function run(checks, mergeError, includeRequired = true, files = []) {
   if (includeRequired)
     checks = [
       ...required
@@ -56,6 +56,7 @@ async function run(checks, mergeError, includeRequired = true) {
   };
   const pulls = {
     list() {},
+    listFiles() {},
     get: async () => ({ data: pr }),
     merge: async (input) => {
       if (mergeError)
@@ -76,12 +77,23 @@ async function run(checks, mergeError, includeRequired = true) {
       git: { deleteRef: async () => {} },
     },
     paginate: async (fn) =>
-      fn === pulls.list ? [pr] : fn === checksAPI.listForRef ? checks : [],
+      fn === pulls.list
+        ? [pr]
+        : fn === pulls.listFiles
+          ? files
+          : fn === checksAPI.listForRef
+            ? checks
+            : [],
   };
   await execute(
     github,
     { repo: { owner: "owner", repo: "repo" } },
-    { info() {}, error() {}, setFailed: (message) => failures.push(message) },
+    {
+      info() {},
+      error() {},
+      summary: { addRaw() {}, async write() {} },
+      setFailed: (message) => failures.push(message),
+    },
   );
   return { merged, failures };
 }
@@ -114,13 +126,13 @@ test("a delayed older run cannot replace a newer failed run", async () => {
   ]);
   assert.equal(result.merged.length, 0);
 });
-test("permission rejection fails the workflow and names the required secret", async () => {
+test("unexpected permission rejection fails the workflow", async () => {
   const result = await run(
     [check("Validate")],
     "Workflows permission required",
   );
   assert.equal(result.merged.length, 0);
-  assert.match(result.failures[0], /DEPENDABOT_AUTO_MERGE_TOKEN/);
+  assert.match(result.failures[0], /Workflows permission required/);
 });
 
 test("missing validation cannot be replaced by a green third-party report", async () => {
@@ -128,4 +140,15 @@ test("missing validation cannot be replaced by a green third-party report", asyn
     (await run([check("Socket Security")], undefined, false)).merged.length,
     0,
   );
+});
+
+test("workflow changes and renames require manual merging", async () => {
+  for (const file of [
+    { filename: ".github/workflows/ci.yml" },
+    { filename: "archived.yml", previous_filename: ".github/workflows/ci.yml" },
+  ]) {
+    const result = await run([check("Validate")], undefined, true, [file]);
+    assert.equal(result.merged.length, 0);
+    assert.equal(result.failures.length, 0);
+  }
 });
