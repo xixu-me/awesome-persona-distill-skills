@@ -1,6 +1,8 @@
 name: Dependabot Auto Merge
 
 on:
+  pull_request_target:
+    types: [opened, synchronize, reopened, ready_for_review]
   check_suite:
     types: [completed]
   workflow_run:
@@ -18,7 +20,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.event.workflow_run.head_branch || github.run_id }}
+  group: ${{ github.workflow }}-${{ github.repository }}
   cancel-in-progress: false
 
 permissions:
@@ -36,10 +38,12 @@ jobs:
       - name: Merge Dependabot PRs when checks pass
         uses: actions/github-script@v9
         with:
+          github-token: ${{ secrets.DEPENDABOT_AUTO_MERGE_TOKEN || github.token }}
           script: |
             const owner = context.repo.owner;
             const repo = context.repo.repo;
 
+            const requiredCheckNames = ["prettier", "link-check", "consistency"];
             const successfulCheckConclusions = new Set(["success", "skipped", "neutral"]);
             const successfulStatusStates = new Set(["success"]);
             const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -99,9 +103,9 @@ jobs:
               });
 
               const latestChecks = latestBy(
-                checkRuns.filter((run) => run.name !== "Dependabot Auto Merge"),
+                checkRuns.filter((run) => !["Dependabot Auto Merge", "Auto-merge Dependabot PRs", "Enable auto-merge for dependency PRs"].includes(run.name)),
                 (run) => (run.app?.slug || "unknown") + ":" + run.name,
-                (run) => run.completed_at || run.started_at || run.created_at,
+                (run) => run.started_at || run.created_at || run.completed_at,
               );
               const latestStatuses = latestBy(statuses, (status) => status.context, (status) => status.updated_at || status.created_at);
 
@@ -113,6 +117,7 @@ jobs:
 
               return {
                 totalSignals: latestChecks.length + latestStatuses.length,
+                missingChecks: requiredCheckNames.filter((name) => !latestChecks.some((run) => run.name === name)),
                 pendingChecks,
                 failedChecks,
                 failedStatuses,
@@ -130,6 +135,7 @@ jobs:
               return;
             }
 
+            const mergeErrors = [];
             const pulls = await findCandidatePulls();
             if (pulls.length === 0) {
               core.info("No open Dependabot PRs to evaluate.");
@@ -156,6 +162,11 @@ jobs:
               }
 
               const signalState = await getSignalState(pr.head.sha);
+              if (signalState.missingChecks.length > 0) {
+                core.info("PR #" + pull_number + " is waiting for validation checks: " + signalState.missingChecks.join(", "));
+                continue;
+              }
+
               if (signalState.totalSignals === 0) {
                 core.info("PR #" + pull_number + " has no checks or statuses yet; skipping.");
                 continue;
@@ -177,7 +188,7 @@ jobs:
               let lastError = null;
               for (const merge_method of mergeMethods) {
                 try {
-                  await github.rest.pulls.merge({ owner, repo, pull_number, merge_method });
+                  await github.rest.pulls.merge({ owner, repo, pull_number, merge_method, sha: pr.head.sha });
                   core.info("Merged Dependabot PR #" + pull_number + " with " + merge_method + ".");
                   merged = true;
                   break;
@@ -192,7 +203,9 @@ jobs:
               }
 
               if (!merged) {
-                core.info("PR #" + pull_number + " could not be merged: " + (lastError?.message || "unknown error") + ".");
+                const message = "PR #" + pull_number + " could not be merged: " + (lastError?.message || "unknown error");
+                core.error(message);
+                mergeErrors.push(message);
                 continue;
               }
 
@@ -204,4 +217,8 @@ jobs:
                   core.info("Could not delete branch " + pr.head.ref + ": " + error.message);
                 }
               }
+            }
+
+            if (mergeErrors.length > 0) {
+              core.setFailed(mergeErrors.join("\n") + "\nWorkflow dependency updates require DEPENDABOT_AUTO_MERGE_TOKEN with Contents, Pull requests, and Workflows write permissions.");
             }
