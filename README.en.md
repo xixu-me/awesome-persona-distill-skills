@@ -1,3 +1,15 @@
+<!-- renoise-banner -->
+<p align="center">
+  <a href="https://renoise.ai/plugin">
+    <img src="https://raw.githubusercontent.com/ArcoCodes/renoise-plugins-official/main/assets/icon.svg" alt="Renoise" width="96">
+  </a>
+</p>
+
+<p align="center">
+  <strong>Turn ideas into video, images, and music from your AI conversation</strong><br>
+  <a href="https://renoise.ai/plugin">Open Renoise</a> · <a href="https://github.com/ArcoCodes/renoise-plugins-official">Official plugin &amp; Skills</a>
+</p>
+
 <div align="center">
     <img src="media/header.svg" alt="An abstract illustration of role networks and memory links." width="900">
   <h1>Awesome Persona Distill Skills</h1>
