@@ -17,6 +17,10 @@
 
 这里的“人格蒸馏”主要指从对话、作品、资料或数字痕迹中提炼表达风格、决策框架与交互方式，不默认等同于对真实个体的完整还原。
 
+## 🎬 把创意 Skill 直接变成画面
+
+当人物设定、叙事方法或广告创意需要继续变成视频、图片和音乐，可以试试 [Renoise](https://renoise.ai/plugin)。它通过 Agent Skill 和 MCP 把创意简报带进 Claude、ChatGPT、Codex 等 AI 对话；安装与工作流见[官方插件仓库](https://github.com/ArcoCodes/renoise-plugins-official)。
+
 > [!NOTE]
 > 条目按存储库名排序，主要为了便于检索与维护；列表顺序不代表推荐优先级、质量高低或重要性先后。
 

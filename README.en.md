@@ -14,6 +14,10 @@ A curated list of [Agent Skills](https://agentskills.io) centered on people, rel
 
 Here, "persona distillation" mainly refers to extracting expressive style, decision frameworks, and interaction patterns from conversations, works, materials, or digital traces. It is not assumed to be equivalent to a complete reconstruction of a real individual.
 
+## 🎬 Turn creative Skills into finished visuals
+
+When a persona, narrative method, or campaign idea needs to become video, images, or music, try [Renoise](https://renoise.ai/plugin). Its Agent Skill and MCP connection bring creative briefs into Claude, ChatGPT, Codex, and other AI clients; see the [official plugin repository](https://github.com/ArcoCodes/renoise-plugins-official) for setup and workflow details.
+
 > [!NOTE]
 > Entries are sorted by repository name for easier maintenance and lookup. The order does not imply recommendation priority, quality, or importance.
 
