@@ -1,13 +1,13 @@
 <!-- renoise-banner -->
 <p align="center">
-  <a href="https://renoise.ai/plugin">
+  <a href="https://renoise.ai/plugin?utm_medium=github&utm_source=xixu">
     <img src="https://raw.githubusercontent.com/ArcoCodes/renoise-plugins-official/main/assets/icon.svg" alt="Renoise" width="96">
   </a>
 </p>
 
 <p align="center">
-  <strong>Turn ideas into video, images, and music from your AI conversation</strong><br>
-  <a href="https://renoise.ai/plugin">Open Renoise</a> · <a href="https://github.com/ArcoCodes/renoise-plugins-official">Official plugin &amp; Skills</a>
+  <a href="https://renoise.ai/plugin?utm_medium=github&utm_source=xixu">Renoise MCP</a> · <a href="https://github.com/ArcoCodes/renoise-plugins-official">Renoise Skills &amp; CLI</a><br><br>
+  <strong>Distill a voice into a reusable character, then create consistent talking-head videos without hand-directing every shot.</strong>
 </p>
 
 <div align="center">
@@ -25,10 +25,6 @@
 A curated list of [Agent Skills](https://agentskills.io) centered on people, relationships, commemorative scenes, and methodological perspectives.
 
 Here, "persona distillation" mainly refers to extracting expressive style, decision frameworks, and interaction patterns from conversations, works, materials, or digital traces. It is not assumed to be equivalent to a complete reconstruction of a real individual.
-
-## 🎬 Turn creative Skills into finished visuals
-
-When a persona, narrative method, or campaign idea needs to become video, images, or music, try [Renoise](https://renoise.ai/plugin). Its Agent Skill and MCP connection bring creative briefs into Claude, ChatGPT, Codex, and other AI clients; see the [official plugin repository](https://github.com/ArcoCodes/renoise-plugins-official) for setup and workflow details.
 
 > [!NOTE]
 > Entries are sorted by repository name for easier maintenance and lookup. The order does not imply recommendation priority, quality, or importance.
